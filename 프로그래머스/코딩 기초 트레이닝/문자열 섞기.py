@@ -1,12 +1,15 @@
 
-a = input()
-b = input()
+# def solution(str1, str2):
+#     answer = ""
+#     for a, b in zip(str1, str2):
+#         answer += a + b
+#     return answer
 
- 
-# a의 짝수 번째 번호를 b의 짝수번호와 바꿈
-# i는 a부터 
+def solution(str1, str2) :
+    answer = ''
+    for i in range(len(str1)) :
+        answer += str1[i] + str2[i]
+    return answer
+    
 
-for i in range(len(a)) :
-    a.replace(a[i%2==0],b[i%2==0])
-
-print(a)
+print(solution('aaaa','bbbb'))
